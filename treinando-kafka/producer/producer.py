@@ -5,7 +5,7 @@ from time import sleep
 from datetime import datetime
 
 # create instance of the kafka producer
-producer = KafkaProducer(bootstrap_servers='192.168.58.226:9092',
+producer = KafkaProducer(bootstrap_servers='IP_CONTAINER:9092',
                          value_serializer=lambda v: str(v).encode('utf-8'))
 topic_name = "kafka-python-topic"
 # call the producer .send method with a producer record

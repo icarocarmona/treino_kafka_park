@@ -1,6 +1,6 @@
 const Kafka = require('no-kafka')
 
-const consumer = new Kafka.SimpleConsumer({"connectionString": "192.168.58.226:9092"})
+const consumer = new Kafka.SimpleConsumer({"connectionString": "IP_CONTAINER:9092"})
 var data = function(messageSet, topic, partition){
     messageSet.forEach(function(m){
         var value = m.message.value.toString('utf8')
